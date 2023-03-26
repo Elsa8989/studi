@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-24 09.31.33 AM"/>
+        <attribute name="created" value="SHA7UFBMRzEyMjA4OTgzLUNJOzIwMjMtMDMtMTA7MDEuMDMuNDIgUE07MjMzNA=="/>
+        <attribute name="edited" value="SHA7UFBMRzEyMjA4OTgzLUNJOzIwMjMtMDMtMjQ7MDkuMzEuMzMgQU07MjsyNDQy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Max, i" type="Integer" array="False" size=""/>
+            <assign variable="Max" expression="0"/>
+            <for variable="i" start="0" end="100" direction="inc" step="1">
+                <if expression="i &lt;= 100">
+                    <then>
+                        <output expression="i" newline="True"/>
+                        <if expression="i &gt; Max">
+                            <then>
+                                <assign variable="max" expression="i"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else>
+                        <output expression="max" newline="True"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;nilali max adalah : &quot; &amp; Max" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

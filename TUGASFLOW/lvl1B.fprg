@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-09 09.43.39 PM"/>
+        <attribute name="created" value="SHA7UFBMRzEyMjA4OTgzLUNJOzIwMjMtMDMtMDc7MDkuNTcuMDEgUE07MjM1Mg=="/>
+        <attribute name="edited" value="SHA7UFBMRzEyMjA4OTgzLUNJOzIwMjMtMDMtMDk7MDkuNDMuMzkgUE07MzsyNDcw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <if expression="a &gt; b">
+                <then>
+                    <if expression="a &gt; c">
+                        <then>
+                            <output expression="(a)" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="(c)" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="b &gt; c">
+                        <then>
+                            <output expression="(b)" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="(c)" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="max" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
